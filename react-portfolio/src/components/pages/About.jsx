@@ -70,7 +70,7 @@ function About() {
               whileTap={{scale:0.95, rotate:"2.5deg"}}
               transition={{
                 duration:0.725,
-                ease:"easeInOut"
+                ease:easeInOut
               }}
               />
               </div>

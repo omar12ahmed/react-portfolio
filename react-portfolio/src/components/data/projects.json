@@ -3,37 +3,43 @@
     {
         "id": 1,
         "title": "3 day weather forecast",
-        "description": "This is project 2",
-        "image":"kj"
+        "description": "This weather app allows user to check the 5-day weather forcast for a specific city. A user can search for a city, view it's current weather conditions and forecast for the next 5 days.",
+        "image":"jsm7XMcyeTFJE4vHzO",
+        "projectLink":"https://omar12ahmed.github.io/weather-api/"
        
     },
     
     {
         "id": 2,
-        "title": "Project 1",
-        "description": "This is project 2",
-        "image":""
+        "title": "Password generator",
+        "description": "A password generator app which creates strong and secure passwords for users",
+        "image":"1BAn4SMe1B4f7vfxcO",
+        "projectLink":"https://omar12ahmed.github.io/password-Generator/"
+
 
     },
     {
         "id": 3,
-        "title": "Project 1",
-        "description": "This is project 2",
-        "image":""
+        "title": "README.md generator",
+        "description": " This is a command line application which allows users to dynamically generate a readme.md file by answering a series of prompts. Instructions for usage can be found in the readme file within the repository",
+        "image":"11Cn7h5PA8cyiY",
+        "projectLink":"https://github.com/omar12ahmed/readme-generator-"
 
     },
     {
         "id": 4,
-        "title": "Project 1",
-        "description": "This is project 2",
-        "image":""
+        "title": "Calculator",
+        "description": "A simple web-based calculator application ",
+        "image":"xT1Ra5h24Eliux3UVq",
+        "projectLink":"https://omar12ahmed.github.io/calculator/"
         
     },
     {
         "id": 5,
         "title": "Project 1",
         "description": "This is project 2",
-        "image":""
+        "image":"GxmqepIBKZEa25dkpP",
+        "projectLink":"https://omar12ahmed.github.io/Form-validation/"
 
     },
     {
