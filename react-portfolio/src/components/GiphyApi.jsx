@@ -7,7 +7,7 @@ const GIPHY_API_KEY = "MqVayP47oxKVMqt1oxqye3kA2QbPgjnU";
 
 
 function GiphyApi({giphyId}) {
-  const [gifMetUrl, setGifMetUrl] = useState('');
+  const [gifUrl, setGifMetUrl] = useState('');
 
   useEffect(() => {
     const fetchGiphy = async () => {
@@ -37,10 +37,20 @@ function GiphyApi({giphyId}) {
 
     
 
-  return gifMetUrl ? (
-    <motion.div whileHover={{ scale: 1.1, opacity:0.8 }}  >
-        <motion.img src={gifMetUrl} alt="A 5 Day weather forcast project" />
-    </motion.div>
+  return gifUrl ? (
+    <motion.div whileHover={{ scale: 1.1, opacity:0.8 }} style={{width:"300px",height:"200px", overflow:""}} >
+        <motion.img className="gifs" 
+        src={gifUrl} 
+        style={{width:"100%", 
+        height:"100%", 
+        marginBottom:"100px",
+        objectFit:"cover",
+        // position:"absolute",
+        // top:"50%",
+        // left:"50%",
+        // transform:"translate(-50%, -50%)"
+        }} />
+     </motion.div>
   ) : null;
 }
 

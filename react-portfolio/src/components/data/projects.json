@@ -36,16 +36,17 @@
     },
     {
         "id": 5,
-        "title": "Project 1",
-        "description": "This is project 2",
+        "title": "Form Validation",
+        "description": "A simple form validation. It validates user input for name, email, password, and confirm password fields.",
         "image":"GxmqepIBKZEa25dkpP",
         "projectLink":"https://omar12ahmed.github.io/Form-validation/"
 
     },
     {
         "id": 6,
-        "title": "Project 1",
-        "description": "This is project 2",
-        "image":""
+        "title": "Employee Tracker",
+        "description": "Tis is a web application that allows users to track and manage employee infromation",
+        "image":"uPTghm35y2fIn1AriV",
+        "projectLink":"https://omar12ahmed.github.io/employee-tracker/"
     }
 ]

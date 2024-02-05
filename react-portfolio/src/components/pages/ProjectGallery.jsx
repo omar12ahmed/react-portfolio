@@ -12,12 +12,13 @@ function ProjectGallery() {
         
               <div>
                 {projects.map((project) => (
-                  <div key={project.id}>
+                  <div key={project.id} className="projectContainer">
                     <Project
                      title={project.title} 
                      description={project.description} 
                      giphyId={project.image}
                      projectLink={project.projectLink} />
+                     <hr className="projectDivider"/>
                   </div>
                 ))}
               </div>

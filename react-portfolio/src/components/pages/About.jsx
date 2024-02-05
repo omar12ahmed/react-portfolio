@@ -20,7 +20,7 @@ function About() {
     return (
       <div>
         <div>
-          <h1>About me</h1>
+          <h1 className="title">About me</h1>
   
           <div>
             <p>
@@ -48,14 +48,16 @@ function About() {
               in Front End development, successfully earning a certificate. This
               transformative journey has been characterized by perseverance,
               adaptability, and an unwavering drive to excel in the field of
-              software development. I am excited to build on this foundation,
+              software development.I consistently aim to surpass expectations 
+              and demonstrate effectiveness, whether working independently or 
+              as a part of a team.I am excited to build on this foundation,
               continually expanding my horizons and contributing to the
               ever-evolving world of technology.
             </p>
           </div>
         </div>
   <div>
-    <h2>Technology and tools used</h2>
+    <h2 className="title">Technology and tools used</h2>
     <p> Blending the latest in technology with reliable open-source tools, i design and build applications and websites that prioritize user experince. From Smartphones and tablets to desktops, my focus is on delivering high perfomance solutions that resonates with users. </p>
   </div>
         <div className="img-container">
