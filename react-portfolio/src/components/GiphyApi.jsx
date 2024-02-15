@@ -40,7 +40,7 @@ function GiphyApi({giphyId}) {
     
 
   return gifUrl ? (
-    <Fade cascade={false} delay={giphyId *1000} direction="down" triggerOnce:false>
+    <Fade cascade={false} delay={giphyId *1000} direction="down" triggerOnce>
 
     <motion.div whileHover={{ scale: 1.1, opacity:0.8 }} style={{width:"300px",height:"200px", overflow:""}} >
         <motion.img className="gifs" 
@@ -49,6 +49,7 @@ function GiphyApi({giphyId}) {
         height:"100%", 
         marginBottom:"100px",
         objectFit:"cover",
+        
         // position:"absolute",
         // top:"50%",
         // left:"50%",

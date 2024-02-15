@@ -2,7 +2,7 @@
 [
     {
         "id": 1,
-        "title": "3 day weather forecast",
+        "title": "5 day weather forecast",
         "description": "This weather app allows user to check the 5-day weather forcast for a specific city. A user can search for a city, view it's current weather conditions and forecast for the next 5 days.",
         "image":"jsm7XMcyeTFJE4vHzO",
         "projectLink":"https://omar12ahmed.github.io/weather-api/"
