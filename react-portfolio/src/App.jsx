@@ -9,7 +9,7 @@ import Contact from "./components/pages/Contact"
 import About from './components/pages/About';
 import ProjectGallery from "./components/pages/ProjectGallery"
 import "./style.css"
-
+import NavigationButtons2 from './components/NavigationButtons2';
 
 
 
@@ -20,7 +20,9 @@ function App() {
       
     
       <Header />
+      <NavigationButtons2/>
       <Routes>
+        
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
 

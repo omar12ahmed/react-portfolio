@@ -45,7 +45,7 @@
   background-image: url("images/image11.jpg");
   background-size: cover;
   background-position: center;
-  height: 300px;
+  /* height: 300px; */
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -56,15 +56,15 @@
 }
 
 .pic-mask {
-  width: 28%;
+  width: 75%;
   aspect-ratio: 1/1;
   border-radius: 50%;
   overflow: hidden;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 1.8);
+  box-shadow: 0 8px 16px 4px rgba(0, 0, 0, 1.8);
   background-color: rgba(255, 255, 255, 0.019);
   order:1;
   position: absolute;
-  top: 50%;
+  top: auto;
   left: 50%;
   transform: translate(-50%, -50%);
   order: 1;
@@ -94,14 +94,16 @@
 
 
 .animated-circle {
-  position: absolute; /* Position the circle absolutely within the hero-banner */
-  width: 28%; /* Adjust the size of the circle as needed */
-  padding-top: 28%; /* Maintain a 1:1 aspect ratio for the circle */
-  border: 4px solid #fff; /* Border color */
-  border-radius: 50%; /* Make it a circle */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add a shadow */
-  overflow: hidden; /* Hide overflow content */
+  position: absolute; 
+  width: 78%; 
+  padding-top: 28%; 
+  border: 4px solid #fff; 
+  border-radius: 50%; 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+  overflow: hidden; 
   animation: pulse 2s infinite;
+  top: 17px;
+  aspect-ratio: 1/1;
 }
 
 @keyframes pulse {
@@ -152,11 +154,11 @@
 }
 
 
-.typing-animation-0,
+/* .typing-animation-0,
 .typing-animation-1 {
   animation-name: none;
   animation-name: typing;
-}
+} */
 
 .img-skill{
    /* border: 1px solid #ccc;
@@ -193,4 +195,78 @@ margin-top: 100px;
 .projectDivider{
 width: 100%;
 margin-top: 60px;
+}
+
+
+/*         contact page              */
+
+.contactForm{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+/* navbar */
+p{
+  line-height: 1.8;
+  color: #333;
+}
+
+.nav-btns{
+  position: fixed;
+  top: 45%;
+  margin: 0 2em;
+}
+
+.nav-back {
+  position: fixed;
+  left: 0;
+  margin-left: 3em;
+  border-radius: 50%;
+  padding: 15px;
+  background-color:rgb(35, 151, 222);
+  opacity: 0.4;
+  transition: opacity 0.3s;
+}
+
+.nav-forward {
+  position: fixed;
+  right: 0;
+  margin-right: 3em;
+  border-radius: 50%;
+  padding: 15px;
+  background-color:rgb(35, 151, 222);
+  opacity: 0.4;
+  transition: opacity 0.3s;
+  
+}
+.nav-forward:hover{
+  opacity: 1;
+}
+
+.nav-back:hover{
+  opacity: 1;
+}
+
+body{
+  /* background-color: rgb(115, 112, 118); */
+}
+
+.cvButton{
+margin-bottom: 20px;
+font-size:16px;
+border: none;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+border-radius: 8px;
+transition: background-color 0.4s ease;
+cursor: pointer;
+background-color: #4caf50;
+
+}
+
+.cvButton:hover{
+  background-color: #45a049;
 }
