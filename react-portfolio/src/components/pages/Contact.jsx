@@ -27,8 +27,6 @@ function Contact() {
             )
             .then(
                 (result) => {
-                    console.log(result.text);
-                    console.log("message sent");
                     window.alert("Form Submitted, Thank you 😁")
                 },
                 (error) => {

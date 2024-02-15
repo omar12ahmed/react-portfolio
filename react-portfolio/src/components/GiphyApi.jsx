@@ -21,7 +21,6 @@ function GiphyApi({giphyId}) {
         });
 
         const gifData = response.data.data;
-        console.log(gifData);
 
         // Use the 'original' size image URL
         const gifImageUrl = gifData.images.original.url;
