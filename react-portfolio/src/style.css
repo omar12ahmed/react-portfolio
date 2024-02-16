@@ -249,9 +249,6 @@ p{
   opacity: 1;
 }
 
-body{
-  /* background-color: rgb(115, 112, 118); */
-}
 
 .cvButton{
 margin-bottom: 20px;
@@ -263,10 +260,11 @@ text-decoration: none;
 border-radius: 8px;
 transition: background-color 0.4s ease;
 cursor: pointer;
-background-color: #4caf50;
+background-color: #4c54af;
+color: white;
 
 }
 
 .cvButton:hover{
-  background-color: #45a049;
+  background-color: #350fdd;
 }

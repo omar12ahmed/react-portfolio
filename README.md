@@ -1,13 +1,13 @@
-# My React Portfolio
+# My Portfolio
 
-Welcome to my React portfolio! This project showcases a collection of my work, providing insights into my skills, projects, and journey as a software developer.
+Welcome to my portfolio! This project showcases a collection of my work, providing insights into my skills, projects, and journey as a software developer.
 
 ## Table of Contents
 
 - [About Me](#about-me)
 - [Projects](#projects)
 - [Contact Me](#contact-me)
-- [Live Demo](#live-demo)
+- [Link to Portfolio](#link-to-portfolio)
 - [Repository](#repository)
 
 ## About Me
@@ -24,19 +24,19 @@ Today, I'm entering a new chapter in my journey, having enrolled in a 4-month bo
 
 In this portfolio, you'll find a selection of my projects, each demonstrating different skills and technologies. Here are a few highlights:
 
-1. ** 5 day Weather Forecat:** [Live Demo](https://omar12ahmed.github.io/weather-api/) | [Repository](https://github.com/omar12ahmed/weather-api)
+1. **5 day Weather Forecat:** [Live link](https://omar12ahmed.github.io/weather-api/) | [Repository](https://github.com/omar12ahmed/weather-api)
    - This weather app allows user to check the 5-day weather forcast for a specific city. A user can search for a city, view it's current weather conditions and forecast for the next 5 days.
 
-2. **Password Generator:** [Live Demo](https://omar12ahmed.github.io/password-Generator/) | [Repository](https://github.com/omar12ahmed/password-Generator)
+2. **Password Generator:** [Live link](https://omar12ahmed.github.io/password-Generator/) | [Repository](https://github.com/omar12ahmed/password-Generator)
    - A password generator app which creates strong and secure passwords for users
 
-3. **ReadME md Generator:**  | [Repository](https://github.com/omar12ahmed/readme-generator-)
+3. **ReadME md Generator:** [Repository](https://github.com/omar12ahmed/readme-generator-)
    - This is a command line application which allows users to dynamically generate a readme.md file by answering a series of prompts. Instructions for usage can be found in the readme file within the repository
 
-4. **Calculator:** [Live Demo](https://omar12ahmed.github.io/calculator/) | [Repository](https://github.com/omar12ahmed/calculator)
+4. **Calculator:** [Live link](https://omar12ahmed.github.io/calculator/) | [Repository](https://github.com/omar12ahmed/calculator)
    - A simple web-based calculator application
 
-5. **Form validation:** [Live Demo](https://omar12ahmed.github.io/Form-validation/) | [Repository](https://github.com/omar12ahmed/Form-validation)
+5. **Form validation:** [Live link](https://omar12ahmed.github.io/Form-validation/) | [Repository](https://github.com/omar12ahmed/Form-validation)
    - A simple form validation. It validates user input for name, email, password, and confirm password fields.
 
 Feel free to explore each project for more details, including live demos and source code links.
@@ -46,12 +46,12 @@ Feel free to explore each project for more details, including live demos and sou
 I'm always open to connecting with fellow developers and potential collaborators. You can reach out to me through the following channels:
 
 - **Email:** [omar12ahmed@hotmail.com](mailto:omar12ahmed@hotmail.com)
-- **LinkedIn:** [Yet to be confirmed](https://www.linkedin.com/in/omar-ibrahim-aaba3344/)
+- **LinkedIn:** [Linked In Profile](https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile)
 - **GitHub:** [GitHub Profile](https://github.com/omar12ahmed)
 
 Feel free to get in touch if you have any questions, feedback, or opportunities to discuss.
 
-## Live Demo
+## Link to Portfolio
 
 [This is the link to the live project](https://omar12ahmed.github.io/react-portfolio/)
 

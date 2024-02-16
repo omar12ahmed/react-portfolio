@@ -27,13 +27,13 @@ function ContentHomepage() {
                 <span style={{ fontWeight: "bold", color: 'red' }}> {typeEffect}/</span>
             </h3>
             <a  href="https://docs.google.com/document/d/1CAIwv2HWn-TjV8L_-POYujVtfucZvmF45q05u4ghpck/edit" target="_blank" rel="noopener noreferrer">
-                <button className='cvButton' style={{marginBottom:"20px", fontSize:"16px", border:"none", color:"", padding:"15px 32px", textAlign:"center"}} type="button">Download CV</button>
+                <button className='cvButton'  type="button">Download CV</button>
             </a>
             <p style={{ fontSize: "25px", marginTop:"20px"}}> Follow me: 
                 <a href="https://github.com/omar12ahmed?tab=repositories" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon style={{ marginRight: "15px", marginLeft:"20px" }} icon={faGithub} fontSize="40px" />
                 </a>
-                <a href="https://www.linkedin.com/in/omar-ibrahim-aaba3344/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faLinkedin} style={{fontSize:"40px"}} />
                 </a>
             </p>

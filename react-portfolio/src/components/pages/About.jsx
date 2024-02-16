@@ -11,7 +11,7 @@ function About() {
       "/images/icons/css.jpg",
       "/images/icons/js.jpg",
       "/images/icons/jquery.jpg",
-      "/images/icons/React-v-ts.jpg",
+      "/images/icons/vite-react.jpg",
       "/images/icons/router.jpg",
       "/images/icons/axios.jpg",
       "/images/icons/node.jpg",
@@ -127,18 +127,3 @@ function About() {
   
   export default About;
 
-  // variants={{
-  //   hidden:{left:0},
-  //   visible:{left :"100%"},
-  // }}
-  // initial="hidden"
-  // animate={controlsArray[index]}
-  // transition={{ duration: 0.5, delay: ease:"easeIn" }}
-  // style={{
-  //   position:"absolute",
-  //   top:4,
-  //   bottom:4,
-  //   left:0,
-  //   right:0,
-  //   background:"brown"
-  // }}
