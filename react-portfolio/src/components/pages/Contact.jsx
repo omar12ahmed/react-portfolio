@@ -233,7 +233,7 @@ function Contact() {
                     </motion.div >
                 </a>
 
-                <a href="https://docs.google.com/document/d/1CAIwv2HWn-TjV8L_-POYujVtfucZvmF45q05u4ghpck/edit" target="_blank">
+                <a href="https://drive.google.com/file/d/1d4HgiPXFgn2SnTSeZA5WDCnJQ2DizLeM/view?usp=sharing" target="_blank">
 
                     <motion.div
                         initial={{ opacity: 0, x: -60 }}

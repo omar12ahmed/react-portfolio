@@ -26,7 +26,7 @@ function ContentHomepage() {
 
                 <span style={{ fontWeight: "bold", color: 'red' }}> {typeEffect}/</span>
             </h3>
-            <a href="https://docs.google.com/document/d/1CAIwv2HWn-TjV8L_-POYujVtfucZvmF45q05u4ghpck/edit" target="_blank" rel="noopener noreferrer">
+            <a href="https://drive.google.com/file/d/1d4HgiPXFgn2SnTSeZA5WDCnJQ2DizLeM/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                 <button className='cvButton' type="button">Download CV</button>
             </a>
             <p style={{ fontSize: "25px", marginTop: "20px" }}> Follow me:
