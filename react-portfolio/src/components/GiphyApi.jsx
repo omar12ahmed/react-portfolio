@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import {easeInOut, motion} from "framer-motion"
+import { easeInOut, motion } from "framer-motion"
 import { Fade } from "react-awesome-reveal";
 
 
@@ -8,7 +8,7 @@ import { Fade } from "react-awesome-reveal";
 const GIPHY_API_KEY = "MqVayP47oxKVMqt1oxqye3kA2QbPgjnU";
 
 
-function GiphyApi({giphyId}) {
+function GiphyApi({ giphyId }) {
   const [gifUrl, setGifMetUrl] = useState('');
 
   useEffect(() => {
@@ -32,30 +32,31 @@ function GiphyApi({giphyId}) {
     };
 
     if (giphyId) {
-        fetchGiphy();
-      }
-    }, [giphyId]);
+      fetchGiphy();
+    }
+  }, [giphyId]);
 
-    
+
 
   return gifUrl ? (
-    <Fade cascade={false} delay={giphyId *1000} direction="down" triggerOnce>
+    <Fade cascade={false} delay={giphyId * 1000} direction="down" triggerOnce>
 
-    <motion.div whileHover={{ scale: 1.1, opacity:0.8 }} style={{width:"300px",height:"200px", overflow:""}} >
-        <motion.img className="gifs" 
-        src={gifUrl} 
-        style={{width:"100%", 
-        height:"100%", 
-        marginBottom:"100px",
-        objectFit:"cover",
-        
-        // position:"absolute",
-        // top:"50%",
-        // left:"50%",
-        // transform:"translate(-50%, -50%)"
-        }} />
-     </motion.div>
-     </Fade>
+      <motion.div whileHover={{ scale: 1.1, opacity: 0.8 }} style={{ width: "300px", height: "200px", overflow: "" }} >
+        <motion.img className="gifs"
+          src={gifUrl}
+          style={{
+            width: "100%",
+            height: "100%",
+            marginBottom: "100px",
+            objectFit: "cover",
+
+            // position:"absolute",
+            // top:"50%",
+            // left:"50%",
+            // transform:"translate(-50%, -50%)"
+          }} />
+      </motion.div>
+    </Fade>
   ) : null;
 }
 

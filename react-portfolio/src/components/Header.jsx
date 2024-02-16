@@ -6,7 +6,7 @@ function Header() {
 
         <>
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
-                <div className="container-fluid" style={{backgroundColor:"rgba(9, 1, 21, 0.122)", padding:"10px", borderRadius:"10px"}}>
+                <div className="container-fluid" style={{ backgroundColor: "rgba(9, 1, 21, 0.122)", padding: "10px", borderRadius: "10px" }}>
 
                     <ul className="nav nav-tabs">
                         <li className="nav-item">
@@ -56,7 +56,7 @@ function Header() {
 
             </nav>
 
-        
+
         </>
     )
 }

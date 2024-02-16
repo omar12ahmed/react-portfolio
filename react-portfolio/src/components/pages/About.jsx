@@ -1,62 +1,63 @@
-import {easeInOut, motion, useAnimation, useIsPresent} from "framer-motion"
-import React, { useEffect, useRef} from "react"
+import { easeInOut, motion, useAnimation, useIsPresent } from "framer-motion"
+import React, { useEffect, useRef } from "react"
 import { useInView } from "react-intersection-observer"
 
 
 
 
 function About() {
-    const images = [
-      "/images/icons/html.jpg",
-      "/images/icons/css.jpg",
-      "/images/icons/js.jpg",
-      "/images/icons/jquery.jpg",
-      "/images/icons/vite-react.jpg",
-      "/images/icons/router.jpg",
-      "/images/icons/axios.jpg",
-      "/images/icons/node.jpg",
-      "/images/icons/postman.jpg",
-      "/images/icons/bootstrap.jpg",
-      "/images/icons/figma.jpg",
+  const images = [
+    "/images/icons/html.jpg",
+    "/images/icons/css.jpg",
+    "/images/icons/js.jpg",
+    "/images/icons/jquery.jpg",
+    "/images/icons/vite-react.jpg",
+    "/images/icons/router.jpg",
+    "/images/icons/axios.jpg",
+    "/images/icons/node.jpg",
+    "/images/icons/postman.jpg",
+    "/images/icons/bootstrap.jpg",
+    "/images/icons/figma.jpg",
 
-    ];
+  ];
 
-    const refs = [useRef(null),useRef(null),useRef(null)]
-    const controlsArray= refs.map((ref) => useAnimation());
-    const slideControlsArray = refs.map((ref)=> useAnimation())
-    const [containerRef, containerInView]= useInView({once:true})
-
-    
-
-
-    useEffect(()=>{
-      if(containerInView){
-        controlsArray.forEach((control)=>{
-          control.start("visible");
-        });
-        slideControlsArray.forEach((control)=>{
-          control.start("visible")
-        })
-      }
+  const refs = [useRef(null), useRef(null), useRef(null)]
+  const controlsArray = refs.map((ref) => useAnimation());
+  const slideControlsArray = refs.map((ref) => useAnimation())
+  const [containerRef, containerInView] = useInView({ once: true })
 
 
 
-    },[containerInView, controlsArray,slideControlsArray]);
-  
-    return (
-      <div >
-          <h1 className="title">
-               About me
-            </h1>
-  
-          <div ref={containerRef}>
-          {refs.map((ref, index) => (
+
+  useEffect(() => {
+    if (containerInView) {
+      controlsArray.forEach((control) => {
+        control.start("visible");
+      });
+      slideControlsArray.forEach((control) => {
+        control.start("visible")
+      })
+    }
+
+
+
+  }, [containerInView, controlsArray, slideControlsArray]);
+
+  return (
+    <div >
+      <h1 className="title">
+        About me
+      </h1>
+
+      <div ref={containerRef}>
+        {refs.map((ref, index) => (
           <motion.p
             key={index}
             ref={ref}
-            style={{ position: "relative", overflow: "hidden", width: "fitContent", 
-            padding: "20px",
-          }}
+            style={{
+              position: "relative", overflow: "hidden", width: "fitContent",
+              padding: "20px",
+            }}
             variants={{
               hidden: { opacity: 0, y: 75 },
               visible: { opacity: 1, y: 0 },
@@ -93,37 +94,37 @@ function About() {
               </>
             )}
           </motion.p>
-          
-          
+
+
         ))}
       </div>
-  <div>
-    <h2 className="title">Technology and tools used</h2>
-    <p> Blending the latest in technology with reliable open-source tools, i design and build applications and websites that prioritize user experince. From Smartphones and tablets to desktops, my focus is on delivering high perfomance solutions that resonates with users. </p>
-  </div>
+      <div>
+        <h2 className="title">Technology and tools used</h2>
+        <p> Blending the latest in technology with reliable open-source tools, i design and build applications and websites that prioritize user experince. From Smartphones and tablets to desktops, my focus is on delivering high perfomance solutions that resonates with users. </p>
+      </div>
 
 
-        <div className="img-container">
-          {images.map((path, index) => (
-            <div className="img-skill" key= {index}>
+      <div className="img-container">
+        {images.map((path, index) => (
+          <div className="img-skill" key={index}>
 
-           <motion.img
+            <motion.img
               src={path}
               alt={`image ${index + 1}`}
               width={80}
-              whileHover={{scale:1.5}}
-              whileTap={{scale:0.95, rotate:"2.5deg"}}
+              whileHover={{ scale: 1.5 }}
+              whileTap={{ scale: 0.95, rotate: "2.5deg" }}
               transition={{
-                duration:0.725,
-                ease:easeInOut
+                duration: 0.725,
+                ease: easeInOut
               }}
-              />
-              </div>
-          ))}
-        </div>
+            />
+          </div>
+        ))}
       </div>
-    );
-  }
-  
-  export default About;
+    </div>
+  );
+}
+
+export default About;
 

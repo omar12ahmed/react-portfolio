@@ -13,50 +13,106 @@ import { useState, useEffect } from "react";
 function Contact() {
 
     const [text, setText] = useState('');
-  const fullText =  `If you'd like to connect with me on LinkedIn,
+    const fullText = `If you'd like to connect with me on LinkedIn,
   feel free to search for my name and send a connection request. Explore my GitHub profile
   to discover some of my coding projects that you might find interesting. The repositories
   showcase my latest work and coding endeavours. Feel free to reach out if you have any
   questions or want to connect. I appreciate your interest.`
 
-  useEffect(()=>{
-    let index=0;
-    const intervalId= setInterval(()=>{
-        setText(fullText.slice(0, index + 1));
-        index += 1;
+    useEffect(() => {
+        let index = 0;
+        const intervalId = setInterval(() => {
+            setText(fullText.slice(0, index + 1));
+            index += 1;
 
-        if(index >= fullText.length){
-            clearInterval(intervalId)
-        }
+            if (index >= fullText.length) {
+                clearInterval(intervalId)
+            }
 
-    }, 20)
-    return () => clearInterval(intervalId);
-  }, [])
+        }, 20)
+        return () => clearInterval(intervalId);
+    }, [])
 
 
 
 
     const form = useRef();
 
+    const [formData, setFormData] = useState({
+        user_name: "",
+        user_email: "",
+        message: "",
+    });
+
+    const [formErrors, setFormErrors] = useState({
+        user_name: "",
+        user_email: "",
+        message: "",
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+            ...formData,
+            [name]: value,
+        });
+    };
+
+
+    const validateForm = () => {
+        let errors = {};
+        let isValid = true;
+
+        if (!formData.user_name.trim()) {
+            errors.user_name = "Name is required"
+            isValid = false;
+        }
+        if (!formData.user_email.trim()) {
+            errors.user_email = "Email is required"
+            isValid = false;
+        } else if (!isValidEmail(formData
+            .user_email.trim())) {
+            errors.user_email = "Imvalid Email address"
+            isValid = false;
+        }
+        if (!formData.message.trim()) {
+            errors.message = "Message is required";
+            isValid = false;
+        }
+
+        setFormErrors(errors);
+        return isValid
+
+    }
+
+    const isValidEmail = (email) => {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    };
+
+
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs
-            .sendForm(
-                "service_cmwnrac",
-                "template_hqkybd4",
-                form.current,
-                "MMAR9NMSvKNys_gPS"
-            )
-            .then(
-                (result) => {
-                    window.alert("Form Submitted, Thank you 😁")
-                },
-                (error) => {
-                    console.log(error.text);
-                }
-            );
-    };
+        if (validateForm()) {
+
+            emailjs
+                .sendForm(
+                    "service_cmwnrac",
+                    "template_hqkybd4",
+                    form.current,
+                    "MMAR9NMSvKNys_gPS"
+                )
+                .then(
+                    (result) => {
+                        window.alert("Form Submitted, Thank you 😁")
+                    },
+                    (error) => {
+                        console.log(error.text);
+                    }
+                );
+        };
+    }
 
 
 
@@ -70,13 +126,35 @@ function Contact() {
 
                 <StyledContactForm className="contactForm">
                     <form ref={form} onSubmit={sendEmail}>
-                        <label>Name</label>
-                        <input type="text" name="user_name" />
-                        <label> Email</label>
-                        <input type="email" name="user_email" />
-                        <label >Message</label>
-                        <textarea name="message" placeholder="Feel free to drop me a message about anything - whether it's a project idea, collaboration, or just to say hello! " />
-                        <input type="submit" value={"Send"} style={{ backgroundColor: "rgb(103 86 76" }} />
+                        <span style={{ color: "red" }}>{formErrors.user_name}</span>
+                        <label>Name
+                        </label>
+                        <input type="text"
+                            name="user_name"
+                            value={formData.user_name}
+                            onChange={handleChange}
+                        />
+
+                        <span style={{ color: "red" }}>{formErrors.user_email}</span>
+
+                        <label> Email
+                        </label>
+                        <input type="email"
+                            name="user_email"
+                            value={formData.user_email}
+                            onChange={handleChange}
+                        />
+                        <span style={{ color: "red" }}>{formErrors.message}</span>
+                        <label >Message
+                        </label>
+                        <textarea name="message"
+                            placeholder="Feel free to drop me a message about anything - whether it's a project idea, collaboration, or just to say hello! "
+                            value={formData.message}
+                            onChange={handleChange}
+                        />
+                        <input type="submit"
+                            value={"Send"}
+                            style={{ backgroundColor: "rgb(103 86 76" }} />
                     </form>
 
                 </StyledContactForm>
