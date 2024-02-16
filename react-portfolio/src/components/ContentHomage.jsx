@@ -5,9 +5,6 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 
-// import React,{useState, useEffect} from "react";
-
-
 
 function ContentHomepage() {
     const [typeEffect] = useTypewriter({

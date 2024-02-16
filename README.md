@@ -6,6 +6,7 @@ Welcome to my portfolio! This project showcases a collection of my work, providi
 
 - [About Me](#about-me)
 - [Projects](#projects)
+- [Process](#process)
 - [Contact Me](#contact-me)
 - [Screenshot](#screenshot)
 - [Link to Portfolio](#link-to-portfolio)
@@ -41,6 +42,41 @@ In this portfolio, you'll find a selection of my projects, each demonstrating di
    - A simple form validation. It validates user input for name, email, password, and confirm password fields.
 
 Feel free to explore each project for more details, including live demos and source code links.
+
+## Process
+
+### Technologies Used:
+
+* [![HTML5](https://img.shields.io/badge/HTML-5-orange)](https://www.w3.org/TR/html52/)
+
+* [![CSS3](https://img.shields.io/badge/CSS-3-blue)](https://www.w3.org/TR/css-2018/)
+
+* [![ECMAScript 2015](https://img.shields.io/badge/ECMAScript-2015-yellow)](https://www.ecma-international.org/ecma-262/6.0/)
+
+* [![React Version](https://img.shields.io/badge/React-17-blue.svg)](https://reactjs.org/)
+
+* [![Node.js Version](https://img.shields.io/badge/Node.js-14-green)](https://nodejs.org/)
+
+* [![React Router](https://img.shields.io/badge/React_Router-v6-blue)](https://reactrouter.com/)
+
+* [![Axios](https://img.shields.io/badge/Axios-v0.21.4-brightgreen)](https://axios-http.com/)
+
+* [![Framer Motion](https://img.shields.io/badge/Framer_Motion-v4.1.17-blue)](https://www.framer.com/motion/)
+
+* [![React Awesome Reveal](https://img.shields.io/badge/React_Awesome_Reveal-v1.1.0-blue)](https://github.com/dennismorello/react-awesome-reveal)
+
+* [![React Intersection Observer](https://img.shields.io/badge/React_Intersection_Observer-v8.32.6-blue)](https://github.com/thebuilder/react-intersection-observer)
+
+* [![Email.js](https://img.shields.io/badge/Email.js-2.6.4-blue)](https://www.emailjs.com/)
+
+* [![Styled Components](https://img.shields.io/badge/Styled_Components-v5.3.3-orange)](https://styled-components.com/)
+
+* [![React Simple Typewriter](https://img.shields.io/badge/React_Simple_Typewriter-v1.0.0-blue)](https://github.com/ChangJoo-Park/react-simple-typewriter)
+
+* [![Font Awesome](https://img.shields.io/badge/Font_Awesome-v5.15.3-blue)](https://fontawesome.com/)
+
+
+
 
 ## Contact Me
 

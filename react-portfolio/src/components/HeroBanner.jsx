@@ -30,10 +30,3 @@ function HeroBanner() {
 
 
 export default HeroBanner
-
-
-
-
-// <div className="subtitle">
-// <h2>Exploring the World of Code and Creativity</h2>
-// </div>

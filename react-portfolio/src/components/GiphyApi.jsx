@@ -22,7 +22,6 @@ function GiphyApi({ giphyId }) {
 
         const gifData = response.data.data;
 
-        // Use the 'original' size image URL
         const gifImageUrl = gifData.images.original.url;
 
         setGifMetUrl(gifImageUrl);
@@ -49,11 +48,6 @@ function GiphyApi({ giphyId }) {
             height: "100%",
             marginBottom: "100px",
             objectFit: "cover",
-
-            // position:"absolute",
-            // top:"50%",
-            // left:"50%",
-            // transform:"translate(-50%, -50%)"
           }} />
       </motion.div>
     </Fade>
