@@ -57,6 +57,8 @@ Feel free to explore each project for more details, including live demos and sou
 
 * [![Node.js Version](https://img.shields.io/badge/Node.js-14-green)](https://nodejs.org/)
 
+* ![npm](https://img.shields.io/npm/v/package-name)
+
 * [![React Router](https://img.shields.io/badge/React_Router-v6-blue)](https://reactrouter.com/)
 
 * [![Axios](https://img.shields.io/badge/Axios-v0.21.4-brightgreen)](https://axios-http.com/)
