@@ -55,6 +55,8 @@ Feel free to explore each project for more details, including live demos and sou
 
 * [![React Version](https://img.shields.io/badge/React-17-blue.svg)](https://reactjs.org/)
 
+* [![Vite](https://img.shields.io/badge/Vite-2.7.15-blue)](https://vitejs.dev/)
+
 * [![Node.js Version](https://img.shields.io/badge/Node.js-14-green)](https://nodejs.org/)
 
 * ![npm](https://img.shields.io/npm/v/package-name)
