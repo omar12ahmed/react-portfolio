@@ -20,6 +20,7 @@ function ProjectGallery() {
             description={project.description}
             giphyId={project.image}
             projectLink={project.projectLink}
+            repo= {project.repo}
           />
           <hr className="projectDivider" />
         </div>

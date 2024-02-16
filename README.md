@@ -7,6 +7,7 @@ Welcome to my portfolio! This project showcases a collection of my work, providi
 - [About Me](#about-me)
 - [Projects](#projects)
 - [Contact Me](#contact-me)
+- [Screenshot](#screenshot)
 - [Link to Portfolio](#link-to-portfolio)
 - [Repository](#repository)
 
@@ -51,9 +52,13 @@ I'm always open to connecting with fellow developers and potential collaborators
 
 Feel free to get in touch if you have any questions, feedback, or opportunities to discuss.
 
+## Screenshot
+
+![Screenshot](/react-portfolio/public/images/screenshot.jpg)
+
 ## Link to Portfolio
 
-[This is the link to the live project](https://omar12ahmed.github.io/react-portfolio/)
+[This is the link to the live project](https://dapper-daffodil-fcbf81.netlify.app/)
 
 ## Repository
 
