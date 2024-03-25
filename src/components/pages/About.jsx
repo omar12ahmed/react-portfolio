@@ -68,30 +68,36 @@ function About() {
           >
             {index === 0 && (
               <>
-                My journey into the world of software development began with a degree in pharmacology. Yet, I quickly
-                realized that my true passion lay in the realm of software development. This epiphany came thanks to my
-                brother-in-law, a full-stack developer, who ignited my curiosity and set me on an exciting new path. I
-                embarked on this new path through online research and self-guided learning, which proved to be a
-                challenging endeavor without proper mentorship.
+                I am a passionate software developer based in Bristol, United Kingdom. 
+                My journey in software development began during my undergraduate studies 
+                in pharmacology when I discovered my love for coding. 
+                Inspired by my brother-in-law, a full-stack developer, I started self-teaching
+                programming languages such as HTML, CSS, and JavaScript through online tutorials
+                and exercises. This experience fuelled my desire to delve deeper into software 
+                development, leading me to complete a 6-month internship where I honed my skills
+                in web development using technologies like Bootstrap and jQuery.
+
               </>
             )}
             {index === 1 && (
               <>
-                A turning point in my journey came when I secured an internship in software development, a pivotal
-                moment that would forever shape my career. Over the course of a 6-month program with two different
-                companies, I had the privilege of immersing myself in the diverse facets of software development. Working
-                alongside cross-functional teams, I gained invaluable insights and hands-on experience.
+                To further expand my knowledge and expertise, I joined a 6-month boot camp course
+                where I delved into advanced topics such as React and React Hooks. This experience
+                not only sharpened my technical abilities but also instilled in me a passion for 
+                creating intuitive and user-friendly interfaces.
               </>
             )}
             {index === 2 && (
               <>
-                After completing the internship, I pursued a 6-month bootcamp course in Front End development,
-                successfully earning a certificate. This transformative journey has been characterized by perseverance,
-                adaptability, and an unwavering drive to excel in the field of software development. I consistently aim
-                to surpass expectations and demonstrate effectiveness, whether working independently or as a part of a
-                team. I am excited to build on this foundation, continually expanding my horizons and contributing to
-                the ever-evolving world of technology.
+                Outside of software development, I enjoy staying active by going to the gym, playing
+                basketball, and occasionally challenging friends to a game of pool. I am also excited
+                about the prospect of pursuing an internship in Front End Development, where I can apply
+                my skills, learn from industry experts, and contribute to meaningful projects.
+
+                I am constantly seeking new challenges and opportunities for growth in the dynamic world of technology, and I look forward to making a positive impact through my work as a software developer.
               </>
+
+              
             )}
           </motion.p>
 
